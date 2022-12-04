@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<center>
+
+    {% for table in tables %}
+        {{titles[loop.index]}}
+        {{table|safe}}
+    {% endfor %}
+
+    <br><br>
+
+    <img src="{{ user_image }}">
+
+</center>
+    
+{% endblock %}
